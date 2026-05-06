@@ -1,6 +1,6 @@
 // Añadir un efecto de aparición al hacer scroll
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.glass-card, .game-card, .eval-box');
+    const cards = document.querySelectorAll('.glass-card, .game-card, .eval-box, .content-image');
 
     // Create an intersection observer
     const observer = new IntersectionObserver((entries) => {
