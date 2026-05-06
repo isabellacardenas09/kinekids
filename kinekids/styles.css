@@ -1,16 +1,16 @@
 :root {
-    --bg-color: #0f0c29;
-    --bg-color-2: #302b63;
-    --bg-color-3: #24243e;
-    --text-primary: #ffffff;
-    --text-secondary: #b3b0d2;
-    --accent-1: #00ffcc; /* Neon Cyan */
-    --accent-2: #ff007f; /* Neon Pink */
-    --accent-3: #7b2cbf; /* Deep Purple */
-    --accent-4: #ccff00; /* Neon Lime */
+    --bg-color: #fce4ec; /* Soft pink */
+    --bg-color-2: #e3f2fd; /* Soft blue */
+    --bg-color-3: #f3e5f5; /* Soft purple */
+    --text-primary: #37474f; /* Dark gray for readability */
+    --text-secondary: #546e7a; /* Medium gray */
+    --accent-1: #26c6da; /* Soft Cyan */
+    --accent-2: #ff8a65; /* Soft Peach */
+    --accent-3: #ab47bc; /* Soft Purple */
+    --accent-4: #9ccc65; /* Soft Green */
     
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.8);
 }
 
 * {
@@ -89,7 +89,7 @@ h1, h2, h3, h4, .logo {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background: rgba(15, 12, 41, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -220,7 +220,7 @@ h1, h2, h3, h4, .logo {
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid var(--glass-border);
     padding: 2.5rem;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
     transition: transform 0.4s ease;
 }
 
@@ -260,8 +260,8 @@ h1, h2, h3, h4, .logo {
 
 .neon-border {
     border-radius: 20px;
-    border: 1px solid var(--accent-1);
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2) inset;
+    border: 2px solid var(--accent-1);
+    box-shadow: 0 0 15px rgba(38, 198, 218, 0.2);
 }
 
 .tag {
@@ -281,10 +281,11 @@ h1, h2, h3, h4, .logo {
     height: 350px;
     object-fit: cover;
     border-radius: 25px;
+    margin-top: 2rem;
     margin-bottom: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid var(--glass-border);
-    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Evaluación */
@@ -296,7 +297,7 @@ h1, h2, h3, h4, .logo {
 }
 
 .eval-box {
-    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+    background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     padding: 2rem;
@@ -319,7 +320,7 @@ h1, h2, h3, h4, .logo {
 .eval-box h4 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--accent-3);
 }
 
 .eval-box ul {
@@ -356,14 +357,14 @@ h1, h2, h3, h4, .logo {
 .game-card {
     background: var(--glass-bg);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.8);
     padding: 2.5rem;
     transition: all 0.4s;
     position: relative;
 }
 
 .game-card:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.8);
     transform: scale(1.02);
 }
 
@@ -380,12 +381,12 @@ h1, h2, h3, h4, .logo {
 
 .game-card .obj {
     color: var(--text-primary);
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 4rem 5% 2rem;
     text-align: center;
     border-top: 1px solid var(--glass-border);
@@ -403,7 +404,7 @@ footer {
 .referencias {
     max-width: 800px;
     margin: 0 auto 2rem;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.6);
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -422,7 +423,7 @@ footer {
 
 .credits {
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.4);
+    color: var(--text-secondary);
     margin-top: 2rem;
 }
 
